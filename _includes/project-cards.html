@@ -1,0 +1,24 @@
+<div class="ui cards">
+{% for project in projects %}
+{% unless project.name == 'wileylabs.github.io' %}
+  <div class="card">
+    <div class="content">
+      <h3 class="header">
+        <a href="{{ project.html_url }}">{{ project.name }}</a>
+      </h3>
+      <div class="description">{{ project.description }}</div>
+    </div>
+    <div class="extra content">
+      <a href="{{ project.html_url }}/commits" target="_blank" title="start date">
+        <i class="calendar icon"></i> {{ project.created_at | date: "%Y-%m-%d" }}
+      </a>
+      <div class="right floated">
+        <a href="{{ project.html_url }}/stargazers" target="_blank">
+          <i class="star icon"></i> {{ project.stargazers_count }}
+        </a>
+      </div>
+    </div>
+  </div>
+{% endunless %}
+{% endfor %}
+</div>
