@@ -20,9 +20,11 @@
           <i class="calendar icon"></i> {{ project.created_at | date: "%Y-%m-%d" }}
         </a>
       </div>
+      {% if project.homepage %}
       <div class="right floated">
         <a class="ui tiny button" href="{{ project.homepage }}" target="_blank">Demo!</a>
       </div>
+      {% endif %}
     </div>
   </div>
 {% endunless %}
