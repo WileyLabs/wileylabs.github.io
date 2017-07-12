@@ -16,7 +16,7 @@
 title: WileyLabs
 #email: your-email@domain.com
 description: > # this means to ignore newlines until "baseurl:"
-  WileLabs. Open Source collaboration from the folks at John Wiley & Sons, Inc.
+  WileyLabs. Open Source collaboration from the folks at John Wiley & Sons, Inc.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 #twitter_username: jekyllrb
