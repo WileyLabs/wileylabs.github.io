@@ -1,6 +1,5 @@
 <div class="ui cards">
 {% for project in projects %}
-{% unless project.name == 'wileylabs.github.io' %}
   <div class="card">
     <div class="content">
       <h3 class="header">
@@ -27,6 +26,5 @@
       {% endif %}
     </div>
   </div>
-{% endunless %}
 {% endfor %}
 </div>

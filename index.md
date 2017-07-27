@@ -9,5 +9,5 @@ title: Welcome to WileyLabs
 We're just getting started, but we'd love your contributions on any of the
 projects below.
 
-{% assign projects = site.github.public_repositories | where: "fork","false" %}
+{% assign projects = site.data.repos | where: "fork","false" %}
 {% include project-cards.html %}
