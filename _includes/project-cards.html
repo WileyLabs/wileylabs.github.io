@@ -19,7 +19,7 @@
           <i class="calendar icon"></i> {{ project.created_at | date: "%Y-%m-%d" }}
         </a>
       </div>
-      {% if project.homepage %}
+      {% if project.homepage and project.homepage != '' %}
       <div class="right floated">
         <a class="ui tiny button" href="{{ project.homepage }}" target="_blank">Demo!</a>
       </div>
