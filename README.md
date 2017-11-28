@@ -5,7 +5,10 @@ Uses [Jekyll](http://jekyllrb.com/) to generate a static,
 
 ## Development
 
+You'll need [Ruby](https://www.ruby-lang.org/).
+
 ```
+$ gem install jekyll bundler
 $ bundle install # the jekyll bits
 $ npm i # the semantic-ui bits
 $ npm run build # once. not needed again unless customizing semantic.css
