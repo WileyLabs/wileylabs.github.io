@@ -19,7 +19,7 @@
         </a>
         <a class="item" href="{{ project.html_url }}/commits" title="start date">
           <i class="calendar icon"></i>
-          <time>{{ project.created_at | date: "%Y-%m-%d" }}</time>
+          <time property="schema:dateCreated">{{ project.created_at | date: "%Y-%m-%d" }}</time>
         </a>
       </div>
       {% if project.homepage and project.homepage != '' %}
