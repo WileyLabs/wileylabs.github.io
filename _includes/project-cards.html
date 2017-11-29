@@ -3,25 +3,26 @@
   <div class="card">
     <div class="content">
       <h3 class="header">
-        <a href="{{ project.html_url }}" target="_blank">{{ project.name }}</a>
+        <a href="{{ project.html_url }}">{{ project.name }}</a>
       </h3>
       <div class="description">{{ project.description }}</div>
     </div>
     <div class="extra content">
       <div class="ui horizontal list">
-        <a class="item" href="{{ project.html_url }}/stargazers" target="_blank">
+        <a class="item" href="{{ project.html_url }}/stargazers">
           <i class="star icon"></i> {{ project.stargazers_count }}
         </a>
-        <a class="item" href="{{ project.html_url }}/watchers" target="_blank">
+        <a class="item" href="{{ project.html_url }}/watchers">
           <i class="find icon"></i> {{ project.watchers_count }}
         </a>
-        <a class="item" href="{{ project.html_url }}/commits" target="_blank" title="start date">
-          <i class="calendar icon"></i> {{ project.created_at | date: "%Y-%m-%d" }}
+        <a class="item" href="{{ project.html_url }}/commits" title="start date">
+          <i class="calendar icon"></i>
+          <time>{{ project.created_at | date: "%Y-%m-%d" }}</time>
         </a>
       </div>
       {% if project.homepage and project.homepage != '' %}
       <div class="right floated">
-        <a class="ui tiny button" href="{{ project.homepage }}" target="_blank">Demo!</a>
+        <a class="ui tiny positive button" href="{{ project.homepage }}">Demo!</a>
       </div>
       {% endif %}
     </div>
