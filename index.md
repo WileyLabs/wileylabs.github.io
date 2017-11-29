@@ -6,6 +6,8 @@ layout: default
 title: Welcome to WileyLabs
 ---
 
+{% include epubcheck-message.html %}
+
 We're just getting started, but we'd love your contributions on any of the
 projects below.
 
