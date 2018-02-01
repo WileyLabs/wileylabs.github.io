@@ -12,4 +12,20 @@ We're just getting started, but we'd love your contributions on any of the
 projects below.
 
 {% assign projects = site.data.repos | where: "fork","false" %}
+<div class="ui cards">
+{% for project in projects %}
+  {% unless project.name contains 'github.io' %}
+    {% unless project.topics contains 'experiment' %}
+      {% unless project.topics contains 'meetup' %}
+        {% include project-card.html %}
+      {% endunless %}
+    {% endunless %}
+  {% endunless %}
+{% endfor %}
+</div>
+
+## Experimental Projects
+
+Just a few things we're exploring. Feel free to watch, contribute, or fork!
+{% assign projects = site.data.repos | where: "fork","false" | where: "topics", "experiment" %}
 {% include project-cards.html %}

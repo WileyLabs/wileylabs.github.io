@@ -1,0 +1,29 @@
+<div class="card" resource="{{ project.html_url }}" typeof="schema:SoftwareSourceCode">
+  <div class="content">
+    <div class="header">
+      <a href="{{ project.html_url }}" property="schema:codeRepository">
+        <span property="schema:name">{{ project.name }}</span>
+      </a>
+    </div>
+    <div class="meta">
+      <time property="schema:dateCreated">{{ project.created_at | date: "%Y-%m-%d" }}</time>
+    </div>
+    {% if project.homepage and project.homepage != '' %}
+    <a class="ui tiny top right attached green label" href="{{ project.homepage }}">Demo!</a>
+    {% endif %}
+    <div class="description" property="schema:description">{{ project.description }}</div>
+  </div>
+  <div class="extra content">
+    <div class="ui horizontal list">
+      <a class="item" href="{{ project.html_url }}/stargazers">
+        <i class="star icon"></i> Star
+      </a>
+      <a class="item" href="{{ project.html_url }}/watchers">
+        <i class="find icon"></i> Watch
+      </a>
+      <a class="item" href="{{ project.html_url }}/commits">
+        <i class="calendar icon"></i> Commits
+      </a>
+    </div>
+  </div>
+</div>
