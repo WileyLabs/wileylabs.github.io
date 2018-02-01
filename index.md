@@ -6,7 +6,6 @@ layout: default
 title: Welcome to WileyLabs
 ---
 
-{% include epubcheck-message.html %}
 
 We're just getting started, but we'd love your contributions on any of the
 projects below.
@@ -29,3 +28,13 @@ projects below.
 Just a few things we're exploring. Feel free to watch, contribute, or fork!
 {% assign projects = site.data.repos | where: "fork","false" | where: "topics", "experiment" %}
 {% include project-cards.html %}
+
+## Communities
+
+Wiley employees are contributing to a number of Open Source. Here are a few:
+
+* [epubcheck](https://github.com/IDPF/epubcheck#readme)
+* [Apache Annotator](http://annotator.apache.org/)
+* [LevelGraph](http://levelgraph.io/)
+
+{% include epubcheck-message.html %}
