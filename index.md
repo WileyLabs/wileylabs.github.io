@@ -31,7 +31,7 @@ Just a few things we're exploring. Feel free to watch, contribute, or fork!
 
 ## Communities
 
-Wiley employees are contributing to a number of Open Source. Here are a few:
+Wiley employees also contribute to a number of Open Source projects. Here are a few:
 
 * [epubcheck](https://github.com/IDPF/epubcheck#readme)
 * [Apache Annotator](http://annotator.apache.org/)
