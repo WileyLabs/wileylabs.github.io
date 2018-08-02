@@ -25,7 +25,7 @@ repository: WileyLabs/wileylabs.github.io
 
 # Build settings
 markdown: kramdown
-gems:
+plugins:
   - jekyll-feed
 exclude:
   - Gemfile
