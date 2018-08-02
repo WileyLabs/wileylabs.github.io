@@ -19,12 +19,16 @@ $ bundle exec jekyll serve --incremental # more optimal serve/watch
 
 The `_data/repos.json` is pulled from the GitHub API for
 [listing organizations](https://developer.github.com/v3/repos/#list-organization-repositories)
-and customized to remove any repos we're not currently promoting.
+and (optionally) customized to remove any repos we're not currently promoting.
 
-You can easily update the `_data/repos.json` file with this curl command:
+You can easily update the `_data/repos.json` file using this (wrapped curl)
+command:
 ```bash
-$ curl https://api.github.com/orgs/wileylabs/repos?type=sources > _data/repos.json
+$ npm run dl
 ```
+
+That will update the `_data/repos.json` file which can be further edited before
+committing.
 
 # License
 

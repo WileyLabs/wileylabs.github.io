@@ -10,7 +10,8 @@
   "devDependencies": {},
   "scripts": {
     "build": "cd lib/semantic/ && gulp build",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dl": "curl https://api.github.com/orgs/wileylabs/repos?type=sources -H \"Accept: application/vnd.github.mercy-preview+json\" > _data/repos.json"
   },
   "repository": {
     "type": "git",
