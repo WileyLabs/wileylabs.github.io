@@ -6,6 +6,7 @@ layout: default
 title: Welcome to WileyLabs
 ---
 
+{{ site.description }}
 
 We're just getting started, but we'd love your contributions on any of the
 projects below.
